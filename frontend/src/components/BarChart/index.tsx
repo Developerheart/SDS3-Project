@@ -27,10 +27,12 @@ const BarChart = () => {
         labels: {
             categories: []
         },
-        series: [{
+        series: [
+            {
             name: "",
             data: []
-        }]
+        }
+    ]
     });
 
 
@@ -45,11 +47,15 @@ const BarChart = () => {
                     labels: {
                         categories: myLabels
                     },
-                    series: [{
+                    series: [
+                        {
                         name: "% Sucesso",
                         data: mySeries
-                    }]
+                    }
+                ]
             });
+        });
+    });
 
 
 
@@ -61,6 +67,7 @@ const BarChart = () => {
         },
     };
 
+    //teste
     // const mockData = {
     //     labels: {
     //         categories: ['Anakin', 'Barry Allen', 'Kal-El', 'Logan', 'Padmé']
@@ -85,6 +92,7 @@ const BarChart = () => {
         />
     );
 }
+    
+
 
 export default BarChart;
-
