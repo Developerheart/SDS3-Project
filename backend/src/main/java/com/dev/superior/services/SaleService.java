@@ -2,6 +2,8 @@ package com.dev.superior.services;
 
 import com.dev.superior.dto.SaleDto;
 import com.dev.superior.dto.SellerDto;
+import com.dev.superior.dto.utils.SaleSuccessDto;
+import com.dev.superior.dto.utils.SaleSumDto;
 import com.dev.superior.entities.Sale;
 import com.dev.superior.entities.Seller;
 import com.dev.superior.repository.SaleRepository;
@@ -35,4 +37,14 @@ public class SaleService {
         return result.map(SaleDto::new);
     }
 
+
+    @Transactional(readOnly = true)
+    public List<SaleSumDto> amountGroupedBySeller(){
+        return saleRepository.amountGroupedBySeller();
+    }
+
+    @Transactional(readOnly = true)
+    public List<SaleSuccessDto> successGroupedBySeller(){
+        return saleRepository.successGroupedBySeller();
+    }
 }
