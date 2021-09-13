@@ -18,15 +18,15 @@ function App() {
           </div>
 
           <div className="col-sm-6">
-          <h5>Taxa de sucesso</h5>
+            <h5>Taxa de sucesso</h5>
             <DonutChart />
-            </div>
-        
-        {/* 2 instancias de testes de espaçamento */}
-        
-      <div className="py-3">
-        <h2 className="text-primary">Todas as vendas</h2>
-      </div>
+          </div>
+
+          {/* 2 instancias de testes de espaçamento */}
+
+          <div className="py-3">
+            <h2 className="text-primary">Todas as vendas</h2>
+          </div>
 
 
         </div>
